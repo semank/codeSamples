@@ -1,0 +1,359 @@
+/* green: #8cc63e */
+/* gray: #808080 */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background: url('../images/stripebg.png') left top repeat;
+	margin-top: 15px;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	float: left;
+	margin-bottom: 25px;
+}
+
+header p {
+	display: inline;
+}
+
+.headergreen {
+	text-transform: uppercase;
+	font-family: 'ArvoRegular';
+	font-size: 14pt;
+	color: #8cc63e;
+}
+
+.headergray {
+	text-transform: uppercase;
+	font-family: 'ArvoRegular';
+	font-size: 14pt;
+	color: #808080;
+}
+
+#name {
+	float: left;
+	width: 340px;
+	height: 23px;
+	margin-right: 110px;
+}
+
+#name p {
+	float: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #8cc63e;
+	cursor: help;
+}
+
+nav {
+	float: left;
+	width: 500px;
+}
+
+.greennav {
+	color: #8cc63e;
+	font-family: 'ArvoBold';
+	font-size: 10pt;
+}
+
+.graynav {
+	color: #808080;
+	font-family: 'ArvoRegular';
+	font-size: 10pt;
+}
+
+.hugegray {
+	color: #808080;
+	font-family: 'ArvoBold';
+	font-size: 115px;
+	text-transform: uppercase;
+	float: left;
+	clear: left;
+	position: relative;
+	z-index: -2;
+}
+
+#pretty {
+	padding-top: 20px;
+	margin-left: 60px;
+	float: left;
+	clear: left;
+	position: relative;
+}
+
+#awesome {
+	float: left;
+	clear: left;
+	margin-left: 150px;
+	margin-top: -25px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+#bannertext {
+	float: left;
+	clear: left;
+	position: absolute;
+	top: 180px;
+	left: 350px;
+	height: 68px;
+	width: 619px;
+	z-index: 2;
+	display: table;
+}
+
+#bannertext p {
+	font-family: 'ArvoRegular';
+	font-size: 18pt;
+	height: 68px;
+	width: 619px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	text-shadow:1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.maintext {
+	font-family: 'ArvoRegular';
+	font-size: 10pt;
+	color: #111;
+	width: 820px;
+}
+
+.maintext p {
+	margin: 20px 0px;
+}
+
+.mainheader {
+	height: 25px;
+	width: 500px;
+	float: left;
+	clear: left;
+	background-color: #8cc63e;
+	margin: 20px 0px;
+	-webkit-border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 25px 25px 0px;
+    display: table;
+}
+
+.mainheader p {
+	font-family: 'ArvoRegular';
+	font-size: 11pt;
+	height: 25px;
+	width: 500px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+}
+
+.rule {
+	width: 960px;
+	height: 5px;
+	background: url('../images/rule.png') left top no-repeat;
+	margin: auto;
+	float: left;
+	clear: left;
+}
+
+#lefttail {
+	width: 75px;
+	height: 75px;
+	background: url('../images/banner-lefttail.png') left top no-repeat;
+	position: absolute;
+	top: 190px;
+	left: 311px;
+	z-index: -1;
+}
+
+#righttail {
+	width: 98px;
+	height: 68px;
+	background: url('../images/banner-righttail.png') left top no-repeat;
+	position: absolute;
+	top: 190px;
+	right: 360px;
+	z-index: 0;
+}
+
+#bannermain {
+	width: 619px;
+	height: 68px;
+	background: url('../images/banner-main.png') left top no-repeat;
+	position: absolute;
+	top: 185px;
+	left: 350px;
+	z-index: 1;
+}
+
+.columns {
+	width: 810px;
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+.columns p {
+	margin-bottom: 8px;
+}
+
+footer {
+	width: 960px;
+	height: 50px;
+	margin: 15px auto;
+	display: table;
+}
+
+footer p {
+	font-family: 'ArvoItalic';
+	font-size: 7pt;
+	color: #8cc63e;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#wookmark {
+	margin-bottom: 80px;
+}
+
+/**
+ * Grid container
+ */
+#tiles {
+list-style-type: none;
+position: relative; /** Needed to ensure items are laid out relative to this container **/
+padding-top: 0;
+margin-bottom: 65px;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+width: 250px;
+background-color: #ffffff;
+border: 1px solid #dedede;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+display: none; /** Hide items initially to avoid a flicker effect **/
+  cursor: pointer;
+padding: 10px;
+}
+
+#tiles li img {
+display: block;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+color: #666;
+font-size: 12px;
+margin: 7px 0 0 7px;
+font-family: 'ArvoRegular';
+}
+
+/**
+ * Some extra styles to randomize heights of grid items.
+ */
+#tiles ali:nth-child(3n) {
+height: 175px;
+}
+
+#tiles ali:nth-child(4n-3) {
+padding-bottom: 10px;
+}
+
+#tiles ali:nth-child(5n) {
+height: 250px;
+}
+
+#main h1 {
+text-align: center;
+font-size: 24px;
+font-family: 'ArvoBold';
+margin: 30px 0 3px 0;
+}
+
+.description {
+text-align: center;
+font-size: 12px;
+font-family: 'ArvoRegular';
+color: #808080;
+margin-bottom: -50px;
+}
+
+.me {
+	float: left;
+	clear: left;
+	padding: 15px;
+}
+
+.rightalign {
+	text-align: right;
+}
+
+.resumehead {
+	font-family: 'ArvoBoldItalic';
+	font-size: 12pt;
+	text-decoration: underline;
+}
+
+.date {
+	font-family: 'ArvoRegular';
+	font-size: 10pt;
+}
+
+.employer {
+	font-family: 'ArvoBold';
+	font-size: 10pt;
+}
+
+.jobtitle {
+	font-family: 'ArvoItalic';
+	font-size: 10pt;
+}
+
+.duties {
+	font-family: 'ArvoRegular';
+	font-size: 10pt;
+}
+form {
+	width: 250px;
+	margin: auto;
+}
+
+label {
+	font-family: 'ArvoBold';
+	font-size: 12pt;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+input, textarea {
+	font-family: 'ArvoRegular';
+	font-size: 8pt;
+	padding: 5px;
+	background-color: rgba(229, 255, 192, 0.75);
+	width: 150px;
+}
