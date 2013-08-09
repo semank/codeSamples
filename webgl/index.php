@@ -1,0 +1,7 @@
+<?php include 'includes/header.php'; ?>
+<p>WebGL&trade; is an immediate mode 3D rendering API designed for the web. It is derived from OpenGL&reg; ES 2.0, and provides similar rendering functionality, but in an HTML context. WebGL is designed as a rendering context for the HTML Canvas element. The HTML Canvas provides a destination for programmatic rendering in web pages, and allows for performing that rendering using different rendering APIs. The only such interface described as part of the Canvas specification is the 2D canvas rendering context, CanvasRenderingContext2D. This document describes another such interface, WebGLRenderingContext, which presents the WebGL API.</p>
+
+				<p>The immediate mode nature of the API is a divergence from most web APIs. Given the many use cases of 3D graphics, WebGL chooses the approach of providing flexible primitives that can be applied to any use case. Libraries can provide an API on top of WebGL that is more tailored to specific areas, thus adding a convenience layer to WebGL that can accelerate and simplify development. However, because of its OpenGL ES 2.0 heritage, it should be straightforward for developers familiar with modern desktop OpenGL or OpenGL ES 2.0 development to transition to WebGL development.</p>
+
+				<p class="italic">Source: <a href="https://www.khronos.org/registry/webgl/specs/1.0">https://www.khronos.org/registry/webgl/specs/1.0</a></p>
+				<?php include 'includes/footer.php'; ?>

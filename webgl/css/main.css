@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../fonts/futura-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../fonts/futura-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background: url('../images/body_bg.png') left top repeat;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 30px auto;
+}
+
+#title {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 36pt;
+	float: left;
+	color: #666;
+	text-shadow: 0px 2px 3px #555;
+}
+
+@keyframes titleAnim
+{
+0% {color: #666;}
+50% {color: #00a09d;}
+100% {color: #666;}
+}
+
+@-moz-keyframes titleAnim /* Firefox */
+{
+0% {color: #666;}
+50% {color: #00a09d;}
+100% {color: #666;}
+}
+
+@-webkit-keyframes titleAnim /* Safari and Chrome */
+{
+0% {color: #666;}
+50% {color: #00a09d;}
+100% {color: #666;}
+}
+
+@-o-keyframes titleAnim /* Opera */
+{
+0% {color: #666;}
+50% {color: #00a09d;}
+100% {color: #666;}
+}
+
+#title.animated
+{
+animation: titleAnim 3s;
+-moz-animation: titleAnim 3s; /* Firefox */
+-webkit-animation: titleAnim 3s; /* Safari and Chrome */
+-o-animation: titleAnim 3s; /* Opera */
+}
+.no-cssanimations #title {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 36pt;
+	float: left;
+	color: #666;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.no-cssanimations #title:hover {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 36pt;
+	float: left;
+	color: #00a09d;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.no-cssanimations #title.bluetext {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 36pt;
+	color: #00a09d;
+}
+
+.no-cssanimations #title.bluetext:hover {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 36pt;
+	color: #666;
+}
+
+#title p {
+	margin-top: -20px;
+}
+
+.bluetext {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 36pt;
+	color: #00a09d;
+}
+
+nav {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 12pt;
+	height: 117px;
+	float: left;
+	margin-left: 50px;
+}
+
+nav article {
+	display: inline;
+	width: 117px;
+	height: 117px;
+	background-color: #00a09d;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00a09d), to(#008785));
+	background-image: -webkit-linear-gradient(top, #00a09d, #008785);
+	background-image:    -moz-linear-gradient(top, #00a09d, #008785);
+	background-image:      -o-linear-gradient(top, #00a09d, #008785);
+	background-image:         linear-gradient(to bottom, #00a09d, #008785);
+  	-webkit-border-radius: 117px;
+    border-radius: 117px;
+	float: left;
+}
+
+nav article:hover {
+	background-color: #666666;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#4d4d4d));
+	background-image: -webkit-linear-gradient(top, #666666, #4d4d4d);
+	background-image:    -moz-linear-gradient(top, #666666, #4d4d4d);
+	background-image:      -o-linear-gradient(top, #666666, #4d4d4d);
+	background-image:         linear-gradient(to bottom, #666666, #4d4d4d);
+	float: left;
+}
+
+.no-cssgradients nav article {
+	display: inline;
+	width: 117px;
+	height: 117px;
+	background: url('../images/nav_sprite.png') left top no-repeat;
+	float: left;
+}
+
+.no-cssgradients nav article:hover {
+	background: url('../images/nav_sprite.png') left bottom no-repeat;
+	float: left;
+}
+
+nav a {
+	display: inline;
+	text-decoration: none;
+	color: white;
+	width: 117px;
+	height: 117px;
+	float: left;
+	text-align: center;
+	padding: 0px 20px;
+	line-height: 117px;
+}
+
+#main {
+	width: 880px;
+	margin-top: 30px;
+	padding: 10px 10px 0px 10px;
+	float: left;
+	clear: left;
+	border: 1px solid rgba(0, 169, 157, 0.2);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.italic {
+	font-style: italic;
+}
+
+#main p {
+	font-family: 'FuturaMedium', sans-serif;
+	font-size: 11pt;
+	float: left;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+#main .bluetext {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 36pt;
+	color: #00a09d;
+	margin-bottom: 25px;
+	}
+
+iframe {
+	width: 700px;
+	height: 320px;
+	overflow: hidden;
+	margin-left: 85px;
+	margin-bottom: 10px;
+	float: left;
+	clear: left;
+}
+
+#caniuse, #learning, #mdn {
+	width: 700px;
+	float: left;
+	clear: left;
+	margin-bottom: 25px;
+}
+
+#main a {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 16pt;
+	color: #00a09d;
+	text-decoration: none;	
+}
+
+#main a:hover {
+	text-transform: uppercase;
+	font-family: 'FuturaBold', sans-serif;
+	font-size: 16pt;
+	color: #fff;
+	background-color: #00a09d;
+	padding: 2px;
+}
+
+footer p {
+	font-family: 'FuturaMedium', sans-serif;
+	font-size: 8pt;
+	float: left;
+	color: #555;
+	width: 880px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+footer {
+	width: 880px;
+	margin-top: 30px;
+	padding: 10px 10px 0px 10px;
+	float: left;
+	clear: left;
+	border: 1px solid rgba(0, 169, 157, 0.2);
+	background-color: rgba(255, 255, 255, 0.7);
+}

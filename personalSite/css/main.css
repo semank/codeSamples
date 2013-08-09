@@ -1,0 +1,156 @@
+body {
+	margin: 20px auto;
+	padding: 0;
+	background-image:url('../images/body_bg.png');
+	width: 1020px;
+}
+
+#logo {
+	height: 158px;
+	width: 158px;
+	background:url('../images/logo.png') left top no-repeat;
+	overflow: hidden;
+	float: left;
+}
+
+#logo a {
+	height: 158px;
+	width: 158px;
+	font-size: 99px;
+	color:rgba(0,0,0,0);
+}
+
+#logo:hover {
+	height: 158px;
+	width: 158px;
+	background:url('../images/logo.png') left bottom no-repeat;
+	overflow: hidden;
+}
+
+#name {
+	width: 800px;
+	height: 158px;
+	float: left;
+	margin-left: 30px;
+	font-family: 'DiamondGirl';
+	font-size: 120px;
+	color: #8cc640;
+	margin-top: -140px;
+}
+
+#social {
+	float: left;
+	clear: left;
+	width: 970px;
+	text-align: right;
+	margin-top: -15px;
+}
+
+#navigation {
+	float: left;
+	clear: left;
+	width: 970px;
+	height: 35px;
+	padding: 20px 0px;
+	font-family: 'DiamondGirl';
+	font-size: 32px;
+	color: #000;
+}
+
+#html5, #css3, #jquery, #about, #contact {
+	float: left;
+	width: 194px;
+	text-align: center;
+	font-family: 'DiamondGirl';
+	font-size: 32px;
+	color: #000;
+}
+
+#main {
+	width: 940px;
+	float: left;
+	clear: left;
+	padding: 15px;
+	margin-top: 15px;
+	background-color: rgba(0,0,0,.75);
+	font-family: 'CaviarDreamsRegular';
+	color: #8cc640;
+}
+
+#main section {
+	padding-bottom: 15px;
+}
+
+footer {
+	width: 940px;
+	height: 10px;
+	float: left;
+	clear: left;
+	padding: 30px 15px;
+	margin: 15px 0px;
+	background-color: rgba(0,0,0,.75);
+	font-family: 'CaviarDreamsRegular';
+	color: #8cc640;
+	text-align: center;
+}
+
+/* Giant block of code for the name animation */
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes hinge {
+	0% { -webkit-transform: rotate(0); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	20%, 60% { -webkit-transform: rotate(80deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	40% { -webkit-transform: rotate(60deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	80% { -webkit-transform: rotate(60deg) translateY(0); opacity: 1; -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	100% { -webkit-transform: translateY(700px); opacity: 0; }
+}
+
+@-moz-keyframes hinge {
+	0% { -moz-transform: rotate(0); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	20%, 60% { -moz-transform: rotate(80deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	40% { -moz-transform: rotate(60deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	80% { -moz-transform: rotate(60deg) translateY(0); opacity: 1; -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	100% { -moz-transform: translateY(700px); opacity: 0; }
+}
+
+@-o-keyframes hinge {
+	0% { -o-transform: rotate(0); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	20%, 60% { -o-transform: rotate(80deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	40% { -o-transform: rotate(60deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	80% { -o-transform: rotate(60deg) translateY(0); opacity: 1; -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	100% { -o-transform: translateY(700px); opacity: 0; }
+}
+
+@keyframes hinge {
+	0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; }	
+	100% { transform: translateY(700px); opacity: 0; }
+}
+
+.hinge {
+	-webkit-animation-name: hinge;
+	-moz-animation-name: hinge;
+	-o-animation-name: hinge;
+	animation-name: hinge;
+}
